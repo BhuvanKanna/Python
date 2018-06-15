@@ -1,0 +1,5 @@
+fileReader = open("C:\Bhuvan_Python\Knights and Knaves.txt", 'r')
+currentLine = fileReader.readline()
+print(currentLine)
+x=input("Got it? Now type in an answer!")
+fileWriter = open("Knights and Knaves answer")

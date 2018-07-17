@@ -1,0 +1,23 @@
+def GCF(x, y):
+    while y!=0:
+        x, y=y, x % y
+    return x
+def LCM(a, b):
+    c=a
+    d=b
+    while d!=0:
+        c, d=d, c % d
+    return a*b/c
+function=input("Which function, LCM or GCD? All caps please!")
+if function==("LCM"):
+    LCM1=input("Enter first number:")
+    LCM1=int(LCM1)
+    LCM2=input("Enter second number:")
+    LCM2=int(LCM2)
+    print (LCM(LCM1, LCM2))
+if function==("GCD") or ("GCF"):
+    GCD1=input("Enter first number:")
+    GCD1=int(GCD1)
+    GCD2=input("Enter second number:")
+    GCD2=int(GCD2)
+    print (GCF(GCD1, GCD2))
